@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+/* navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Explore page */
+.page-title {
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.explore-card {
+  height: 81vh;
+  min-width: 400px !important;
+  width: 25vw;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.match-btn {
+  width: 100%;
+}
+
+.fa-space-shuttle {
+  padding-left: 10px;
+}
+
+.badge {
+  font-size: 1.2rem !important;
+  margin: 0px 5px;
+}
+
+.categories-holder {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: scroll;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.categories-holder::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiping-card {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding: 10px;
+  font-size: 1.2rem;
 }
