@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./Components/Navbar";
 import Explore from "./Components/Explore";
+import Matches from "./Components/Matches";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/explore' render={(props) => <Explore />} />
+          <Route exact path='/matches' render={(props) => <Matches />} />
         </Switch>
       </Router>
     </div>

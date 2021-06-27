@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SwipingCard from "./SwipingCard";
 
 function Explore() {
@@ -119,12 +120,14 @@ function Explore() {
       </h1>
       <div className='explore-card card border-secondary mb-3'>
         <div className='card-header'>
-          <button
-            type='button'
-            className='match-btn btn btn-lg btn-outline-secondary'
-          >
-            Match <i class='fas fa-space-shuttle'></i>
-          </button>
+          <Link to='/matches'>
+            <button
+              type='button'
+              className='match-btn btn btn-lg btn-outline-secondary'
+            >
+              Match <i class='fas fa-space-shuttle'></i>
+            </button>
+          </Link>
         </div>
         <div className='card-body'>
           <h4 className='card-title'>Categories :</h4>

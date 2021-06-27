@@ -49,3 +49,44 @@ body {
   padding: 10px;
   font-size: 1.2rem;
 }
+
+.settings {
+  float: right;
+  margin-right: 20px;
+}
+
+.modal-header .close {
+  box-sizing: content-box;
+  font-size: 2rem;
+  color: #000;
+  border: 0;
+  border-radius: 0.15rem;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+.explore-card {
+  overflow-y: scroll;
+}
+
+.explore-card::-webkit-scrollbar {
+  display: none;
+}
+
+.match-card {
+  display: flex;
+}
+
+.match-card .details {
+  margin-left: 25px;
+}
+
+.match-card .btn-close {
+  background: #ea39b8
+    url(https://www.mcicon.com/wp-content/uploads/2021/05/Call-06.jpg)
+    center/2em auto no-repeat;
+}
+
+.avatar {
+  border-radius: 50%;
+}
